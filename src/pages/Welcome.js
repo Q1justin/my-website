@@ -1,9 +1,13 @@
 import Snorlax from '../images/snorlax.png';
+import Navbar from '../components/Navbar';
 
 function Welcome () {
     return (
         <div className="Welcome">
-            <div className="content">
+            <div className="navigation">
+                <Navbar />
+            </div>
+            <div className="content-box">
                 <div className="introduction">
                     <h1>Hello, I am Gyuwon Do</h1>
                     <h3>안녕하세요, 도규원입니다</h3>

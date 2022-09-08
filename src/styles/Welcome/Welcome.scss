@@ -1,12 +1,33 @@
 .Welcome {
     height: 100%;
-    .content {
+    .content-box {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+        vertical-align: middle;
     }
 
-    img {
-        width: 50%;
-        height: 50%;
+    .introduction {
+        min-height: 350px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container {
+        min-height: 350px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 50%;
+            height: 50%;
+            border-radius: 40%;
+        }
     }
 }
