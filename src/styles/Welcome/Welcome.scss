@@ -1,4 +1,12 @@
-img {
-    width: 50%;
-    height: 50%;
+.Welcome {
+    height: 100%;
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    img {
+        width: 50%;
+        height: 50%;
+    }
 }
