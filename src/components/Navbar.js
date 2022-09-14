@@ -13,6 +13,13 @@ export default class App extends Component {
         isLoading={this.state.isLoading}
         menuItems={[
           {
+            title: "Home",
+            isAuth: true,
+            onClick: () => {
+              alert("If there is a home page...");
+            },
+          },
+          {
             title: "About Me",
             isAuth: true,
             onClick: () => {
