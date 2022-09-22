@@ -1,7 +1,7 @@
 import Snorlax from '../images/snorlax.png';
 import Navbar from '../components/Navbar';
 
-function Welcome () {
+function AboutMe () {
     return (
         <div className="Welcome">
             <div className="navigation">
@@ -14,8 +14,8 @@ function Welcome () {
                 </div>
                 <div className="image-container">
                     <div className="image-background">
-                        <img className="welcome-image" src={Snorlax} alt="Snorlax-Munchlax" />       
-                    </div>         
+                        <img className="welcome-image" src={Snorlax} alt="Snorlax-Munchlax" />                
+                    </div>
                 </div>
             </div>
            
@@ -23,4 +23,4 @@ function Welcome () {
     )
 }
 
-export default Welcome;
+export default AboutMe;
