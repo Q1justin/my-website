@@ -6,6 +6,13 @@
         align-items: center;
         margin-top: 3em;
 
+        .image-container {
+            img {
+                height: 40%;
+                width: 35%;
+            }
+        }
+
         .text-container {
             li{
                 font-size: 1.5em;

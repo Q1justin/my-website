@@ -1,5 +1,6 @@
 import Snorlax from '../images/snorlax.png';
 import Navbar from '../components/Navbar';
+import MyPicture from '../images/my-picture.jpg';
 
 function AboutMe () {
     return (
@@ -7,11 +8,11 @@ function AboutMe () {
             <div className="navigation">
                 <Navbar />
             </div>
-            <div className="content-container">
-                <div className="image-container">
-                    <h1>Insert Some Image Here</h1>
+            <div className="content-container pure-g">
+                <div className="image-container pure-u-1-2">
+                    <img src={MyPicture} />
                 </div>
-                <div className="text-container">
+                <div className="text-container pure-u-1-2">
                     <h1>Who Am I?</h1>
 
                     <h2>Personal</h2>
