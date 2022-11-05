@@ -1,0 +1,22 @@
+.LifeProgression {
+    .bar {
+        min-height: 30px;
+        // min-width: 100px;
+        border-radius: 12px;
+    }
+    .korea {
+        background: linear-gradient(#FF0000, #0000FF);
+    }
+    .germany {
+        background: linear-gradient(#000, #FF0000, #FFD700);;
+    }
+    .czech {
+        background: linear-gradient(to right, #0000FF 10%, #FFFFFF 45%,#FF0000 45%);
+    }
+    .new-york {
+        background: linear-gradient(to right, #003884,#FFFFFF, #FF6600);
+    }
+    .dc {
+        background: linear-gradient(#E81B39,#FFFFFF);
+    }
+}

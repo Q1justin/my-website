@@ -1,5 +1,6 @@
-import Snorlax from '../images/snorlax.png';
 import Navbar from '../components/Navbar';
+import LifeProgression from '../components/LifeProgression';
+
 import MyPicture from '../images/my-picture.jpg';
 
 function AboutMe () {
@@ -29,9 +30,7 @@ function AboutMe () {
                     <li>I want to work for a company that has a clear and righteous mission</li>
                 </div>
             </div>
-            <div className="timeline">
-                <h1>My Life</h1>
-            </div>
+            <LifeProgression />
            
         </div>
     )
