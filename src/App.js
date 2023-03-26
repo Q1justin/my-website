@@ -1,13 +1,7 @@
-import { useEffect } from 'react';
-import { Document, Page, pdfjs } from 'react-pdf';
 import HeadPicture from './images/head-picture.jpg';
 import Resume from './Do_Gyuwon_Resume.pdf';
 
-
 function App () {
-  useEffect(() => { 
-    pdfjs.GlobalWorkerOptions.workerSrc =`https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-  }, []);
     return (
         <div className="Welcome">
             <div className="intro-box">
@@ -40,16 +34,24 @@ function App () {
                 </div>     
                 <div className="main-container">
                   <div className="about-me pure-u-1-2">
-                    Filling up space
+                  <h2>Personal</h2>
+                    <li>My name is Gyuwon Do, but I like to go by Justin</li>
+                    <li>I am from South Korea, but grew up in Germany and the Czech Republic</li>
+                    <li>I came to the U.S. in 2015 to attend NYU</li>
+                    <li>I love to exercise and love the outdoors</li>
+                    <li>I am a <b>HUGE</b> cat person</li>
+
+                    <h2>Professional</h2>
+                    <li>I am a frontend developer primarily using React and Javascript</li>
+                    <li>I have been in the tech industry for 3 years</li>
+                    <li>I get motivated by projects that are widely used by different people</li>
+                    <li>I want to work for a company that has a clear and righteous mission</li>
                   </div>
-                  <div className="resume pure-u-1-2">
-                  <Document file={Resume} >
-                    <Page pageNumber={1} renderTextLayer={false}/>
-                  </Document>
+                  <div className="resume-container pure-u-1-2">
+                    <iframe src='https://drive.google.com/file/d/1ZR0E3bVy9lwaqlap6FW8LOI5RKLlla8Z/preview#zoom=20' className="resume" />
                   </div>
                 </div>   
             </div>
-           
         </div>
     )
 }
