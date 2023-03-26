@@ -1,15 +1,17 @@
 
 const TimelineBar = ({
     colorClass,
-    years
+    years,
+    marginLeft,
+    place
 }) => {
 
     const barWidth = Math.min(years / 25) * 100 + '%';
-    const marginLeft = 0;
 
     return (
-        <div className="TimelineBar">
-            <div className={`bar ${colorClass}`}  style={{'width': barWidth}}/>
+        <div className="TimelineBar" style={{'width': barWidth, 'marginLeft': marginLeft}}>
+            <p>{place}</p>
+            <div className={`bar ${colorClass}`}  />
             <p>{years} years</p>
         </div>
     )

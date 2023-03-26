@@ -7,9 +7,13 @@
         margin-top: 3em;
 
         .image-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             img {
-                height: 40%;
-                width: 35%;
+                height: 50%;
+                width: 45%;
+                border-radius: 2em;
             }
         }
 

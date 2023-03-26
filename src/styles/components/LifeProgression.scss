@@ -1,7 +1,6 @@
 .LifeProgression {
     .bar {
         min-height: 30px;
-        // min-width: 100px;
         border-radius: 12px;
     }
     .korea {
@@ -18,5 +17,12 @@
     }
     .dc {
         background: linear-gradient(#E81B39,#FFFFFF);
+    }
+    .TimelineBar {
+        text-align: center;
+        p {
+            margin-top: 0.5em;
+            margin-bottom: 0;
+        }
     }
 }
