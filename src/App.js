@@ -72,8 +72,8 @@ function App () {
                     <iframe src='https://drive.google.com/file/d/1yTkp77avWGa3BwQJQiSrqqH2W-hn4GQm//preview#zoom=20' className="resume" />
                   </div>                  
                 </div>   
-            </div>
-            <div className="projects-container pure-u-1-2">
+                <div className="projects-container pure-u-1-2">
+                    <h1>Projects</h1>
                     <div className="projects-left">
 
                     </div>
@@ -81,7 +81,8 @@ function App () {
 
                     </div>
 
-                  </div>
+                </div>
+            </div>
         </div>
     )
 }

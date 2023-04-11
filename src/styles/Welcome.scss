@@ -42,6 +42,7 @@
                 height: 350px;
                 background-color: #f5c193;
                 position: absolute;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
             }
             .note:nth-child(2) {
                 margin-top: 2em;
@@ -71,14 +72,27 @@
             margin-left: 1em;
             width: 70%;
             height: 30%;
-            background-color: #f0e3bb;
+            background-color: #f2ae99;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
         }
         .resume-container {
+            margin-top: 1em;
             .resume {
                 height: 500px;
                 width: 100%;
             }
         }
+    }
+
+    .projects-container {
+        margin-top: 2em;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        height: 100%;
+        border: 2px solid #000;
+        text-align: center;
     }
    
 }
