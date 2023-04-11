@@ -12,7 +12,7 @@
     .intro-container {
         display: flex;
         flex-direction: row;
-        width: 80%;
+        width: 60%;
         height: 100%;
         border: 2px solid #000;
         .left-column {
@@ -24,8 +24,11 @@
                 margin-top: 1em;
                 margin-bottom: 1em;
                 .my-picture {
-                    width: 200px;
-                    height: 300px;
+                    width: 300px;
+                    height: 400px;
+                    border: 1px solid #fff;
+                    border-radius: 4px;
+                    padding: 1em;
                 }
             }
             
@@ -36,20 +39,20 @@
             align-items: center;
             .note {
                 text-align: center;
-                width: 300px;
-                height: 300px;
-                background-color: #f0e4c9;
+                width: 350px;
+                height: 350px;
+                background-color: #f5c193;
                 position: absolute;
             }
             .note:nth-child(2) {
-                margin-top: 1em;
-                margin-left: 2em;
-                background-color: #f0dbc9;
-            }
-            .note:nth-child(3) {
                 margin-top: 2em;
                 margin-left: 4em;
-                background-color: #f0d3c9;
+                background-color: #f0e4c9;
+            }
+            .note:nth-child(3) {
+                margin-top: 4em;
+                margin-left: 8em;
+                background-color: #e89d95;
             }
         }
         .subtext {
@@ -62,14 +65,14 @@
         padding: 1em;
         display: flex;
         flex-direction: row;
-        width: 95%;
+        width: 85%;
         height: 100%;
         border: 2px solid #000;
 
         .resume-container {
             .resume {
                 height: 500px;
-                width: 400px;
+                width: 100%;
             }
         }
     }

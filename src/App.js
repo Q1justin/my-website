@@ -49,9 +49,18 @@ function App () {
                   </div>
                   <div className="resume-container pure-u-1-2">
                     <iframe src='https://drive.google.com/file/d/1ZR0E3bVy9lwaqlap6FW8LOI5RKLlla8Z/preview#zoom=20' className="resume" />
-                  </div>
+                  </div>                  
                 </div>   
             </div>
+            <div className="projects-container pure-u-1-2">
+                    <div className="projects-left">
+
+                    </div>
+                    <div className="projects-right">
+
+                    </div>
+
+                  </div>
         </div>
     )
 }
