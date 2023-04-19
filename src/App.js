@@ -29,7 +29,6 @@ function App () {
                       </div>
                   </div>
                   <div className="subtext">
-                      <p>I'm happy you wanted to get to know me! Scroll down to learn more about me!</p>
                   </div>
                 </div>     
                 <div className="main-container">
@@ -74,13 +73,18 @@ function App () {
                 </div>   
                 <div className="projects-container pure-u-1-2">
                     <h1>Projects</h1>
-                    <div className="projects-left">
-
+                    <div className="projects">
+                        <div className="projects-left">
+                            <div className="project">
+                                Project 1
+                            </div>
+                        </div>
+                        <div className="projects-right">
+                            <div className="project">
+                                Project 1
+                            </div>
+                        </div>
                     </div>
-                    <div className="projects-right">
-
-                    </div>
-
                 </div>
             </div>
         </div>
