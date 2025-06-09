@@ -1,94 +1,123 @@
 import HeadPicture from './images/head-picture.jpg';
 import Resume from './Do_Gyuwon_Resume.pdf';
 
-function App () {
-    return (
-        <div className="Welcome">
-            <div className="intro-box">
-                <h1>Justin Do</h1>
-                <h3>안녕하세요, 도규원입니다</h3>                
+function App() {
+  const skills = {
+    frontend: ['React', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Next.js'],
+    backend: ['Node.js', 'Python', 'Java', 'PostgreSQL'],
+    tools: ['Git', 'Docker', 'AWS', 'Figma']
+  };
 
-                <div className="intro-container pure-g">
-                  <div className="left-column pure-u-1-2">
-                      <div className="image-container">
-                          <img src={HeadPicture} className="my-picture"/>
-                      </div>
-                  </div>
-                  <div className="right-column pure-u-1-2">
-                      <div className="note">
-                          <h2>What I Do</h2>
-                          <p>Programmer</p>
-                      </div>
-                      <div className="note">
-                          <h2>What I Do</h2>
-                          <p>Programmer</p>
-                      </div>
-                      <div className="note">
-                          <h2>Who am I?</h2>
-                          <p>Programmer, Writer, and Wannabe Guitarist</p>
-                      </div>
-                  </div>
-                  <div className="subtext">
-                  </div>
-                </div>     
-                <div className="main-container">
-                  <div className="about-me pure-u-1-2">
-                    <h2>Personal</h2>
-                        <li>My name is Gyuwon Do, but I like to go by Justin</li>
-                        <li>I am from South Korea, but grew up in Germany and the Czech Republic</li>
-                        <li>I came to the U.S. in 2015 to attend NYU</li>
-                        <li>I love to exercise and love the outdoors</li>
-                        <li>I am a <b>HUGE</b> cat person</li>
+  const projects = [
+    {
+      title: 'Personal Website',
+      description: 'A modern portfolio built with React and SCSS',
+      tech: ['React', 'SCSS', 'JavaScript'],
+      link: 'https://github.com',
+      image: '/images/project1.jpg' // You'll need to add project images
+    },
+    {
+      title: 'Project Two',
+      description: 'Description of your second project',
+      tech: ['Next.js', 'TypeScript', 'Node.js'],
+      link: 'https://github.com',
+      image: '/images/project2.jpg' // You'll need to add project images
+    }
+  ];
 
-                    <h2>Professional</h2>
-                        <li>I am a frontend developer primarily using React and Javascript</li>
-                        <li>I have been in the tech industry for 3 years</li>
-                        <li>I get motivated by projects that are widely used by different people</li>
-                        <li>I want to work for a company that has a clear and righteous mission</li>
-                    <h2>Proficiencies</h2>
-                        <div className="proficiencies-container">
-                            <div className="pure-u-1-3">
-                                <ul>Javascript</ul>
-                                <ul>Python</ul>
-                                <ul>Java</ul>
-                                <ul>C</ul>
-                            </div>
-                            <div className="pure-u-1-3">
-                                <ul>React.js</ul>
-                                <ul>React Native</ul>
-                                <ul>Next.js</ul>
-                                <ul>Node.js</ul>
-                            </div>
-                            <div className="pure-u-1-3">
-                                <ul>PostgreSQL</ul>
-                                <ul>MySQL</ul>
-                                <ul>Postman</ul>
-                                <ul>Heroku</ul>
-                            </div>
-                        </div>
-                  </div>
-                  <div className="resume-container pure-u-1-2">
-                    <iframe src='https://drive.google.com/file/d/1yTkp77avWGa3BwQJQiSrqqH2W-hn4GQm//preview#zoom=20' className="resume" />
-                  </div>                  
-                </div>   
-                <div className="projects-container pure-u-1-2">
-                    <h1>Projects</h1>
-                    <div className="projects">
-                        <div className="projects-left">
-                            <div className="project">
-                                Project 1
-                            </div>
-                        </div>
-                        <div className="projects-right">
-                            <div className="project">
-                                Project 1
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="app">
+      {/* Hero Section */}
+      <header className="hero">
+        <div className="container">
+          <h1 className="hero__title">
+            <span className="hero__greeting">안녕하세요</span>
+            Justin Do
+          </h1>
+          <p className="hero__subtitle">Frontend Developer & Creative Thinker</p>
         </div>
-    )
+      </header>
+
+      <main>
+        {/* About Section */}
+        <section className="about section">
+          <div className="container">
+            <div className="about__grid">
+              <div className="about__image">
+                <img src={HeadPicture} alt="Justin Do" />
+              </div>
+              <div className="about__content">
+                <h2 className="section__title">About Me</h2>
+                <p>Frontend developer with a passion for creating beautiful, functional interfaces. Based in the United States, originally from South Korea.</p>
+                
+                <div className="skills">
+                  {Object.entries(skills).map(([category, items]) => (
+                    <div key={category} className="skills__category">
+                      <h3>{category.charAt(0).toUpperCase() + category.slice(1)}</h3>
+                      <ul className="skills__list">
+                        {items.map(skill => (
+                          <li key={skill} className="skills__item">{skill}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Projects Section */}
+        <section className="projects section">
+          <div className="container">
+            <h2 className="section__title">Featured Projects</h2>
+            <div className="projects__grid">
+              {projects.map((project, index) => (
+                <div key={index} className="project-card">
+                  <div className="project-card__image">
+                    <img src={project.image} alt={project.title} />
+                    <div className="project-card__overlay">
+                      <div className="project-card__content">
+                        <h3 className="project-card__title">{project.title}</h3>
+                        <p className="project-card__description">{project.description}</p>
+                        <div className="project-card__tech">
+                          {project.tech.map(tech => (
+                            <span key={tech} className="tech-tag">{tech}</span>
+                          ))}
+                        </div>
+                        <a href={project.link} className="project-card__link" target="_blank" rel="noopener noreferrer">
+                          View Project →
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section className="contact section">
+          <div className="container">
+            <h2 className="section__title">Get In Touch</h2>
+            <div className="contact__content">
+              <p>I'm always open to new opportunities and interesting projects.</p>
+              <a href="mailto:your.email@example.com" className="button">
+                Say Hello
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer className="footer">
+        <div className="container">
+          <p>© {new Date().getFullYear()} Justin Do. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  );
 }
 
 export default App;
