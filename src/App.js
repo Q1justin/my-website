@@ -1,5 +1,7 @@
 import HeadPicture from './images/head-picture.jpg';
 import Resume from './Do_Gyuwon_Resume.pdf';
+import WeatherDashboard from './images/weather-dashboard.png';
+import WeatherDashboard2 from './images/weather-dashbord2.png';
 
 function App() {
   const skills = {
@@ -10,18 +12,18 @@ function App() {
 
   const projects = [
     {
-      title: 'Personal Website',
+      title: 'Weather Dashboard',
+      description: 'A sleek weather application built with React and Material-UI. Features current weather conditions and 5-day forecast with dynamic updates using OpenWeatherMap API.',
+      tech: ['React', 'Material-UI', 'OpenWeather API', 'JavaScript'],
+      link: 'https://github.com/Q1justin/weather-dashboard',
+      image: WeatherDashboard
+    },
+    {
+      title: 'Baseball Stats',
       description: 'A modern portfolio built with React and SCSS',
       tech: ['React', 'SCSS', 'JavaScript'],
       link: 'https://github.com',
-      image: '/images/project1.jpg' // You'll need to add project images
-    },
-    {
-      title: 'Project Two',
-      description: 'Description of your second project',
-      tech: ['Next.js', 'TypeScript', 'Node.js'],
-      link: 'https://github.com',
-      image: '/images/project2.jpg' // You'll need to add project images
+      image: WeatherDashboard2
     }
   ];
 
