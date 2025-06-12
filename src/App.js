@@ -1,7 +1,7 @@
 import HeadPicture from './images/head-picture.jpg';
 import Resume from './Do_Gyuwon_Resume.pdf';
 import WeatherDashboard from './images/weather-dashboard.png';
-import WeatherDashboard2 from './images/weather-dashbord2.png';
+import MlbDashboard from './images/mlb-dashboard.png';
 
 function App() {
   const skills = {
@@ -22,8 +22,8 @@ function App() {
       title: 'Baseball Stats',
       description: 'A modern portfolio built with React and SCSS',
       tech: ['React', 'SCSS', 'JavaScript'],
-      link: 'https://github.com',
-      image: WeatherDashboard2
+      link: 'https://github.com/Q1justin/mlb-stats-dashboard',
+      image: MlbDashboard
     }
   ];
 
