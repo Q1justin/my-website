@@ -2,6 +2,8 @@ import HeadPicture from './images/head-picture.jpg';
 import Resume from './Do_Gyuwon_Resume.pdf';
 import WeatherDashboard from './images/weather-dashboard.png';
 import MlbDashboard from './images/mlb-dashboard.png';
+import SugarBeat1 from './images/SugarBeat1.png';
+
 
 function App() {
   const skills = {
@@ -11,6 +13,13 @@ function App() {
   };
 
   const projects = [
+    {
+      title: 'SugarBeat',
+      description: 'A react native app that helps track user\'s added sugar intake and other health goals',
+      tech: ['React', 'SCSS', 'TypeScript', 'Expo'],
+      link: 'https://github.com/Q1justin/SugarBeat',
+      image: SugarBeat1
+    },
     {
       title: 'Weather Dashboard',
       description: 'A sleek weather application built with React and Material-UI. Features current weather conditions and 5-day forecast with dynamic updates using OpenWeatherMap API.',
