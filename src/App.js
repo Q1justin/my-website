@@ -7,9 +7,9 @@ import SugarBeat1 from './images/SugarBeat1.png';
 
 function App() {
   const skills = {
-    frontend: ['React', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Next.js'],
-    backend: ['Node.js', 'Python', 'Java', 'PostgreSQL'],
-    tools: ['Git', 'Docker', 'AWS', 'Figma']
+    frontend: ['React', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Sass', 'Next.js', 'Expo', 'Storybook'],
+    backend: ['Node.js', 'Python', 'Java', 'PostgreSQL', 'Supabase', 'Firebase', 'MongoDB'],
+    tools: ['Git', 'Docker', 'Figma', 'Postman', 'Heroku', 'Okta', 'Auth0'],
   };
 
   const projects = [
